@@ -1,0 +1,26 @@
+@import "tailwindcss";
+html {
+    scroll-behavior: smooth;
+  }
+  .custom-triangle {
+    clip-path: polygon(50% 0%, 100% 100%, 0% 100%);
+    border-radius: 15px;
+  }
+  
+  .custom-slant {
+    clip-path: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%);
+    border-radius: 15px;
+  }
+  @keyframes rotate360 {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .rotate-animation {
+    animation: rotate360 10s linear infinite;
+  }
+ 
